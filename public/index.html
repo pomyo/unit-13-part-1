@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>
+    <script src="https://use.fontawesome.com/fef24387de.js"></script>
+    <title>To Do List</title>
+</head>
+<body>
+    <div id="container">
+        <div id="moment-container">
+            <div id="moment">
+                <div class="box dayOfWeek"></div>
+                <div class="box monthAndDay"></div>
+                <div class="box year"></div>
+            </div>
+        </div>
+        <div id="input-container">
+            <input id="input" type="text" size="13">
+        </div>
+        <div id="list-container">
+            <ul id="list"></ul>
+        </div>        
+    </div>
+    <script src="js/calendar.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/init.js"></script>
+</body>
+</html>

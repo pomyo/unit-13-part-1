@@ -1,0 +1,86 @@
+body {
+    height: 99vh;
+    background-color: #fbf9f3;
+    color: #5e6170;
+    font-family: 'Roboto', sans-serif;
+}
+
+#container {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 50vh;
+    background-color: white;
+    width: 300px;
+    box-shadow: 1px 2px 5px grey;
+}
+
+.list-item {
+    display: grid;
+    grid-template-columns: 85% 15%;
+    grid-template-rows: 1fr;
+    padding: 15px;
+    font-size: 20px;
+}
+
+.todo {
+    font-weight: bold;
+    overflow-wrap: break-word;
+}
+
+.toggle-button {
+    display: grid;
+    justify-content: center;
+}
+
+.toggle-button:hover {
+    cursor: pointer;
+}
+
+#input {
+    color: #5e6170;
+    font-size: 25px;
+    border: none;
+    border-bottom: 1px solid #5e6170;
+    margin-left: 15px;
+    outline: none;
+}
+
+#moment-container {
+    padding-top: 20px;
+}
+
+#moment {
+    font-family: sans-serif;
+    margin-left: 5px;
+    width: 200px;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 1fr 1fr;
+    height: 100%;
+}
+
+.box {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.dayOfWeek {
+    font-weight: bold;
+    font-size: 45px;
+    grid-row: span 2;
+}
+
+.monthAndDay, .year {
+    font-size: 15px;
+    justify-content: left;
+}
+
+.year {
+    letter-spacing: 3px;
+}
+
+.fa-times-circle-o {
+    color: #00cdcd
+}
