@@ -3,12 +3,13 @@ const mongoose  = require('mongoose');                 // the mongoose library
 const app       = express();                           // initializes app to be an express application
 const server    = require('http').createServer(app);   // http server
 const io        = require('socket.io')(server);        // this is the server side initialization of socket
+const PORT      = process.env.PORT || 5000;            // dynamic or static port
 
 app.use(express.urlencoded({extended: true})); 
 app.use(express.json());
 app.use(express.static('public'));
 
-mongoose.connect('mongodb://localhost/CodeChat', { useNewUrlParser : true } );
+mongoose.connect('mongodb://localhost/socketToDoList', { useNewUrlParser : true } );
 
 require('./sockets/events')(io);     
 require('./routes/html-routes')(app);
