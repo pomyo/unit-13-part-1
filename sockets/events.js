@@ -1,15 +1,13 @@
 module.exports = function (skynet) {
 
     skynet.on('connection', function(socket) {
-        // console.log('connected');
+        console.log('connected');
 
         socket.on('add-todo', function(data) {
-            console.log(data);
             skynet.emit('emit-todo', data);
         });
         
         socket.on('set-done', function(data) {
-            // console.log(data);
             skynet.emit('emit-done', data);
         });
 

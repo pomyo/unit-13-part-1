@@ -1,9 +1,9 @@
-const express   = require('express');                  // the express library
-const mongoose  = require('mongoose');                 // the mongoose library
-const app       = express();                           // initializes app to be an express application
-const server    = require('http').createServer(app);   // http server
-const io        = require('socket.io')(server);        // this is the server side initialization of socket
-const PORT      = process.env.PORT || 5000;            // dynamic or static port
+const express   = require('express');                  
+const mongoose  = require('mongoose');                 
+const app       = express();                           
+const server    = require('http').createServer(app);   
+const io        = require('socket.io')(server);        
+const PORT      = process.env.PORT || 5000;            
 
 app.use(express.urlencoded({extended: true})); 
 app.use(express.json());
