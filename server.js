@@ -9,7 +9,7 @@ app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 app.use(express.static('public'));
 
-mongoose.connect('mongodb://localhost/socketToDoList', { useNewUrlParser : true } );
+mongoose.connect('mongodb://heroku_369mh3lg:Rocketscience101!@ds251197.mlab.com:51197/heroku_369mh3lg', { useNewUrlParser : true } );
 
 require('./sockets/events')(io);     
 require('./routes/html-routes')(app);
