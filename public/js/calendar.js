@@ -7,8 +7,7 @@ const time = {
 const setDate = () => {
     var date = moment();
     let dayOfWeek   = date.format('ddd').toUpperCase();
-    let monthAndDay = `${date.format('MMM').toUpperCase()} 
-                       ${date.format('D')}`;
+    let monthAndDay = `${date.format('MMM').toUpperCase()} ${date.format('D')}`;
     let year        = date.format('YYYY');
     time.dayOfWeek.html(dayOfWeek);
     time.monthAndDay.html(monthAndDay);
