@@ -1,3 +1,5 @@
-$(document).ready(function(data) {
+$(document).ready(function() {
+    _functions.getAllToDo();
     _listeners.enterInput();
+    _listeners.startSocket();
 });
