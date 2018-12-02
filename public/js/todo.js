@@ -1,3 +1,5 @@
+const socket = io(); 
+
 const _gui = {
     listContainer:  $("#list-container"),
     list:           $("#list"),
@@ -59,13 +61,3 @@ const _listeners = {
         })
     }
 }
-
-const socket = io();    // this is the client side initialization of socket, with no specified namespace
-
-// socket.on('toggle', function(data) {
-//     io.emit('emit-toggle', data);
-// });
-
-// socket.on('update', function(data) {
-//     io.emit('emit-update', data);
-// });
